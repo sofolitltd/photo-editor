@@ -23,6 +23,10 @@ dependencies:
   http: ^1.2.2
   firebase_core: ^2.24.2
   cloud_firestore: ^4.14.0
+  image: ^4.2.0
+  crop_your_image: ^1.1.0
+  flutter_colorpicker: ^1.1.0
+  flutter_box_transform: ^0.4.6
 
 dev_dependencies:
   flutter_test:

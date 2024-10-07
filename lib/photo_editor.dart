@@ -113,6 +113,7 @@ class _PhotoEditorState extends State<PhotoEditor> {
 
   //
   Future<File?> removeBackground(File imageFile) async {
+    print('remover');
     const String apiKey = "PpcjHuziUePQPRppJSyP8SRU";
     final Uri url = Uri.parse('https://api.remove.bg/v1.0/removebg');
 
@@ -624,29 +625,6 @@ Widget _buildScaleHandle() {
   );
 }
 
-// crop handler ui
-Widget _buildCropHandle({double? height, double? width}) {
-  return Container(
-    height: height ?? 16,
-    width: width ?? 40,
-    margin: const EdgeInsets.all(4),
-    decoration: BoxDecoration(
-      border: Border.all(color: Colors.black26),
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(8),
-      boxShadow: const [
-        BoxShadow(
-          color: Colors.black12,
-          blurRadius: 2,
-          spreadRadius: 2,
-        ),
-      ],
-    ),
-    padding: const EdgeInsets.all(4),
-  );
-}
-
-// Stateful Widget for the bottom modal content
 class CustomSizeModal extends StatefulWidget {
   const CustomSizeModal({
     super.key,
